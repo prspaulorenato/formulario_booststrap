@@ -58,14 +58,21 @@
             color: #9D9D9D;
         }
         .container{
-            margin-top: 3%;
-            
+            margin-top: 3%;  
         }
-       
+        .input-linha-inferior{
+            border: none;
+            border-bottom: 2px solid;
+        }
+       /* @media screen and (max-width:768px) {
+        #left{
+           display: none;
+        }
+       } */
     </style>
 </head>
 <body>
-    <div class="dev-flex justify-content-center align-items-center" style="height: 100vh;">
+    <div class="container dev-flex justify-content-center align-items-center" style="height: 100vh;">
         <div class="container">
             <div class="row">
                 <div class="col-md-5" id="left">
@@ -75,25 +82,24 @@
                         <img class="img-fluid position-absolute " src="./img/S.png" style="width: 100px;">
                     </div>
                 </div>
-                <div class="col-md-7" class="right">
-                <div>
-                    <h2>Create Account</h2>
-                    <button type="button" class="btn btn-outline-primary"><a href="#">Sign up with Google</a></button>
-                    <button type="button" class="btn btn-outline-primary"><a href="#">Sign up with Facebook</a></button>
-                </div>
-                - <span>OR</span> -
-                <form>
+                <div class="col-md-7 right d-flex justify-content-center align-items-center flex-column" >
                     <div>
-                        <input class="form-control" type="text" placeholder="Full Name">
-                        <input class="form-control" type="email" placeholder="E-mail">
-                        <input  class="form-control" type="tel" placeholder="Phone number">
+                        <h2>Create Account</h2>
+                        <button type="button" class="btn btn-outline-primary"><a href="#">Sign up with Google</a></button>
+                        <button type="button" class="btn btn-outline-primary"><a href="#">Sign up with Facebook</a></button>
+                    </div>
+                    - <span>OR</span> -
+                    <form class="form-group">
+                        <input class="form-control-lg mb-3 .input-linha-inferior" type="text" placeholder="Full Name">
+                        <input class="form-control-lg mb-3" type="email" placeholder="E-mail">
+                        <input  class="form-control-lg mb-3 " type="tel" placeholder="Phone number">
                         <button type="submit" class="btn btn-info form-control" id="cadastrar">Create Account</button>  
-                    </div> 
-                </form>
-                <p>Already have an account? <a class="text-decoration-none" id="logar" href="#">Login</a></p>
+                        
+                    </form>
+                    <p>Already have an account? <a class="text-decoration-none" id="logar" href="#">Login</a></p>
+                </div>
             </div>
-        </div>
-
+        </div>    
     </div>
 
     
