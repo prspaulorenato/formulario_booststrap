@@ -8,8 +8,7 @@
     <title>Exercício formulário Com bootstrap</title>
     <style>
         *{
-            font-family: 'Telegraf', sans-serif;
-                                                
+            font-family: 'Telegraf', sans-serif;                                    
         }
         /* body{
             background-color: #3a62c2;
@@ -116,13 +115,15 @@
             color: #838383;
         }
 
+        #criar_conta{
+            padding: 20px;
+        }
+
         #criar_conta #titulo_criar_conta{
             font-size: 1.7em;
             font-weight: 600;
             margin-bottom: 1.37em;
         }
-
-       
 
         #criar_conta button a{
             text-decoration: none;
@@ -149,39 +150,39 @@
     </style>
 </head>
 <body>
-    <div>
-        <div id="container">
-            <div class="row">
-                <div class="col-md-5" id="left">
-                    <h1 class="display-5">Need webdesign for your business?<br><strong>Design Spacee</strong> will help you.</h1>
-                    <div class="position-relative d-flex justify-content-center align-items-center" >
-                        <img class="img-fluid" src="./img/Rectangle 8.png" style="width: 200px;" id="img-bg">
-                        <img class="img-fluid position-absolute " src="./img/S.png" style="width: 100px;">
-                    </div>
-                </div>
-                <div class="container col-md-7 right d-flex justify-content-center align-items-center flex-column" id="right" >
-                    <div id="criar_conta">
-                        <h2 class="display-6" id="titulo_criar_conta">Create Account</h2>
-                        <div class="container d-flex " id="cont_criar_conta" >
-                            <button type="button" class="btn btn-outline-primary me-5"><a href="#">Sign up with Google</a></button>
-                            <button type="button" class="btn btn-outline-primary"><a href="#">Sign up with Facebook</a></button>
-                        </div>
-                        <div class="container d-flex justify-content-center align-items-center" id="container_ou">
-                            <p>- OR -</p> 
-                        </div>
-                        <form class="mb-3 d-flex flex-column" method="get">
-                            <input class="form-control-lg is-invalid mb-3 input-linha-inferior " type="text" placeholder="Full Name" minlength="3">
-                            <input class="form-control-lg mb-3 input-linha-inferior" type="email" placeholder="E-mail">
-                            <input class="form-control-lg mb-3 input-linha-inferior" type="tel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s\d{5}-\d{4}" required minlength="11">
-                            <button type="Submit" class="btn btn-primary form-control" id="cadastrar">Create Account</button>  
-                            
-                        </form>
-                    </div>
-                    <p>Already have an account? <a class="text-decoration-none" id="logar" href="#">Login</a></p>
+    <div id="container">
+        <div class="row" style="height: 100vh;">
+            <div class="col-md-5" id="left">
+                <h1 class="display-5">Need webdesign for your business?<br><strong>Design Spacee</strong> will help you.</h1>
+                <div class="position-relative d-flex justify-content-center align-items-center" >
+                    <img class="img-fluid" src="./img/Rectangle 8.png" style="width: 200px;" id="img-bg">
+                    <img class="img-fluid position-absolute " src="./img/S.png" style="width: 100px;">
                 </div>
             </div>
-        </div>    
-    </div>
+            <div class="container col-md-7 right d-flex justify-content-center align-items-center flex-column" id="right" >
+                <div id="criar_conta">
+                    <h2 class="display-6" id="titulo_criar_conta">Create Account</h2>
+                    <div class="container d-flex " id="cont_criar_conta" >
+                        <button type="button" class="btn btn-outline-primary me-5"><a href="#">Sign up with Google</a></button>
+                        <button type="button" class="btn btn-outline-primary"><a href="#">Sign up with Facebook</a></button>
+                    </div>
+                    <div class="container d-flex justify-content-center align-items-center" id="container_ou">
+                        <p>- OR -</p> 
+                    </div>
+                    <form class="mb-3 d-flex flex-column" method="get">
+                        <input class="form-control-lg is-invalid mb-3 input-linha-inferior " type="text" placeholder="Full Name" minlength="3">
+                        <input class="form-control-lg mb-3 input-linha-inferior" type="email" placeholder="E-mail">
+                        <input class="form-control-lg mb-3 input-linha-inferior" type="tel" placeholder="(XX) XXXXX-XXXX" pattern="\(\d{2}\)\s\d{5}-\d{4}" required minlength="11">
+                        <button type="Submit" class="btn btn-primary form-control" id="cadastrar">Create Account</button>  
+                        
+                    </form>
+                </div>
+                <p>Already have an account? <a class="text-decoration-none" id="logar" href="#">Login</a></p>
+            </div>
+        </div>
+    </div>    
+    
+    
 
     
 
